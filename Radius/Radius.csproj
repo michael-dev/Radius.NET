@@ -11,7 +11,6 @@
     <FileVersion>1.0.0.0</FileVersion>
     <OutputPath>bin\$(Configuration)\</OutputPath>
     <Authors>Frederic HEBERT</Authors>
-    <PackageLicenseUrl>http://opensource.org/licenses/MIT</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/Frederic-HEBERT/Radius.NET</PackageProjectUrl>
     <PackageReleaseNotes>
 Fork from Front Porch Inc.
@@ -20,9 +19,10 @@ Change Cryptographic method
 	</PackageReleaseNotes>
     <PackageTags>Radius plugin .NET6</PackageTags>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <PackageId>$(AssemblyName)</PackageId>
+    <PackageId>$(AssemblyName)Client</PackageId>
     <RepositoryUrl>https://github.com</RepositoryUrl>
     <RepositoryType>github</RepositoryType>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugType>full</DebugType>
@@ -30,4 +30,6 @@ Change Cryptographic method
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
   </PropertyGroup>
+
+	    
 </Project>
