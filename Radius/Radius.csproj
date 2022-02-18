@@ -3,7 +3,7 @@
     <TargetFrameworks>net6.0</TargetFrameworks>
     <AssemblyTitle>Radius.NET</AssemblyTitle>
     <Company>Frederic HEBERT</Company>
-    <Product>Radius.NET</Product>
+    <Product>Radius</Product>
     <Description>Radius client in .NET6</Description>
     <Copyright>Copyright 2022</Copyright>
     <Version>1.0.0.0</Version>
@@ -14,13 +14,15 @@
     <PackageLicenseUrl>http://opensource.org/licenses/MIT</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/Frederic-HEBERT/Radius.NET</PackageProjectUrl>
     <PackageReleaseNotes>
-		Fork from Front Porch Inc.
-		Using .NET6
-		Change Cryptographic method
+Fork from Front Porch Inc.
+Using .NET6
+Change Cryptographic method
 	</PackageReleaseNotes>
     <PackageTags>Radius plugin .NET6</PackageTags>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <PackageId>$(AssemblyName).NET</PackageId>
+    <PackageId>$(AssemblyName)</PackageId>
+    <RepositoryUrl>https://github.com</RepositoryUrl>
+    <RepositoryType>github</RepositoryType>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugType>full</DebugType>
