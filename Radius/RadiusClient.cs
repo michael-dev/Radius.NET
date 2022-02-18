@@ -6,8 +6,10 @@ using System.Runtime.InteropServices;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
+using Radius.Atributes;
+using Radius.Enums;
 
-namespace FP.Radius
+namespace Radius
 {
 	public class RadiusClient
 	{

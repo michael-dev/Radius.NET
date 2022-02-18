@@ -1,7 +1,7 @@
 using System;
 using System.Security.Cryptography;
 
-namespace FP.Radius
+namespace Radius
 {
 	public class Utils
 	{

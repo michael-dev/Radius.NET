@@ -2,8 +2,10 @@ using System;
 using System.Collections.Generic;
 using System.Security.Cryptography;
 using System.Text;
+using Radius.Atributes;
+using Radius.Enums;
 
-namespace FP.Radius
+namespace Radius
 {
 	public class RadiusPacket
 	{

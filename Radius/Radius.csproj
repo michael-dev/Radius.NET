@@ -2,23 +2,23 @@
   <PropertyGroup>
     <TargetFrameworks>net6.0</TargetFrameworks>
     <AssemblyTitle>Radius.NET</AssemblyTitle>
-    <Company>Front Porch Inc.</Company>
+    <Company>Frederic HEBERT</Company>
     <Product>Radius.NET</Product>
     <Description>Radius client for .NET</Description>
-    <Copyright>Copyright 2016</Copyright>
+    <Copyright>Copyright 2022</Copyright>
     <Version>1.0.0.0</Version>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <FileVersion>1.0.0.0</FileVersion>
     <OutputPath>bin\$(Configuration)\</OutputPath>
-    <Authors>Front Porch Inc.</Authors>
+    <Authors>Frederic HEBERT</Authors>
     <PackageLicenseUrl>http://opensource.org/licenses/MIT</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/Frederic-HEBERT/Radius.NET</PackageProjectUrl>
     <PackageReleaseNotes>
-      Added Server-Status support
-      Added a Ping() method to the RadiusClient to allow easy sending of Server-Status packets
-      ** Potentially Incompatible Change ** No longer call VerifyAuthenticator inside of SendAndReceivePacket which results in packets being returned that should fail authentication.  Callers should do this instead once the response packet has been received from the RADIUS server.
-    </PackageReleaseNotes>
-    <PackageTags>Radius .NET</PackageTags>
+		Fork from Front Porch Inc.
+		Using .NET6
+		Change Cryptographic method
+	</PackageReleaseNotes>
+    <PackageTags>Radius plugin .NET6</PackageTags>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugType>full</DebugType>

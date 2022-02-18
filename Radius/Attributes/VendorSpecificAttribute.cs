@@ -4,8 +4,10 @@ using System.Linq;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
+using Radius.Atributes;
+using Radius.Enums;
 
-namespace FP.Radius
+namespace Radius
 {
 	public class VendorSpecificAttribute : RadiusAttribute
 	{
