@@ -169,7 +169,7 @@ namespace Radius
 			Array.Copy(secretBytes, 0, sum, radiusPacket.Length, secretBytes.Length);
 			Array.Clear(sum, 4, 16);
 
-			MD5 md5 = new MD5CryptoServiceProvider();
+			var md5 = MD5.Create();
 
 			var hash = md5.ComputeHash(sum, 0, sum.Length);
 			return authenticator.SequenceEqual(hash);
