@@ -10,9 +10,11 @@ namespace Radius
             byte[] sharedS = System.Text.Encoding.ASCII.GetBytes(sharedSecret);
             byte[] sum = new byte[data.Length + sharedS.Length];
 
+
             Array.Copy(data, 0, sum, 0, data.Length);
             Array.Copy(sharedS, 0, sum, data.Length, sharedS.Length);
-            Array.Clear(data, 4, 16);
+            Array.Clear(sum, 4, 16);
+
             var md5 = MD5.Create();
             md5.ComputeHash(sum, 0, sum.Length);
             return md5.Hash;

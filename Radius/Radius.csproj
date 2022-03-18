@@ -6,9 +6,9 @@
     <Product>Radius</Product>
     <Description>Radius client in .NET6</Description>
     <Copyright>Copyright 2022</Copyright>
-    <Version>1.0.1.0</Version>
-    <AssemblyVersion>1.0.1.0</AssemblyVersion>
-    <FileVersion>1.0.1.0</FileVersion>
+    <Version>1.0.2.0</Version>
+    <AssemblyVersion>1.0.2.0</AssemblyVersion>
+    <FileVersion>1.0.2.0</FileVersion>
     <OutputPath>bin\$(Configuration)\</OutputPath>
     <Authors>Frederic HEBERT</Authors>
     <PackageProjectUrl>https://github.com/Frederic-HEBERT/Radius.NET</PackageProjectUrl>

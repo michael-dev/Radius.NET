@@ -173,8 +173,8 @@ namespace Radius
 				default:
 					throw new ArgumentOutOfRangeException();
 			}
-
 			Array.Copy(_Authenticator, 0, RawData, RADIUS_AUTHENTICATOR_INDEX, RADIUS_AUTHENTICATOR_FIELD_LENGTH);
+
 		}
 
 		public void SetIdentifier(byte id)
