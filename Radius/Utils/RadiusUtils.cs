@@ -16,6 +16,7 @@ namespace Radius
             Array.Clear(sum, 4, 16);
 
             var md5 = MD5.Create();
+            //MD5 hash is little endian but the spec RFC2865 tells that the Authenticator is big-endian. But it works like that...
             md5.ComputeHash(sum, 0, sum.Length);
             return md5.Hash;
         }
