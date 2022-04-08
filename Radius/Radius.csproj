@@ -6,8 +6,8 @@
     <Product>Radius</Product>
     <Description>Radius client in .NET6</Description>
     <Copyright>Copyright 2022</Copyright>
-    <Version>1.0.2.0</Version>
-    <AssemblyVersion>1.0.2.0</AssemblyVersion>
+    <Version>1.0.3.0</Version>
+    <AssemblyVersion>1.0.3.0</AssemblyVersion>
     <FileVersion>1.0.2.0</FileVersion>
     <OutputPath>bin\$(Configuration)\</OutputPath>
     <Authors>Frederic HEBERT</Authors>
@@ -17,7 +17,7 @@ Fork from Front Porch Inc.
 Using .NET6
 Change Cryptographic method
 	</PackageReleaseNotes>
-    <PackageTags>Radius plugin .NET6</PackageTags>
+    <PackageTags>Radius Client .NET6</PackageTags>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageId>$(AssemblyName)Client</PackageId>
     <RepositoryUrl>https://github.com</RepositoryUrl>

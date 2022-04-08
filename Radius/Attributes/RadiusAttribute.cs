@@ -54,6 +54,7 @@ namespace Radius.Atributes
 					case RadiusAttributeType.FILTER_ID:
 					case RadiusAttributeType.CALLBACK_NUMBER:
 					case RadiusAttributeType.REPLY_MESSAGE:
+					case RadiusAttributeType.STATE:
 						return Encoding.UTF8.GetString(Data);
 					case RadiusAttributeType.FRAMED_MTU:
 					case RadiusAttributeType.LOGIN_TCP_PORT:
