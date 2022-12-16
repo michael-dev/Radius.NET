@@ -117,7 +117,7 @@ namespace Radius
                         // Using the synchronous method for the timeout features
                         var result = udpClient.Receive(ref endPoint);
                         RadiusPacket receivedPacket = new RadiusPacket(result);
-                        if (receivedPacket.Valid && packet.Identifier == receivedPacket.Identifier)
+                        if (receivedPacket.Valid && VerifyAuthenticator(packet, receivedPacket))
                             return receivedPacket;
                     }
                     catch (SocketException)
