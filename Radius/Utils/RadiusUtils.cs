@@ -33,6 +33,10 @@ namespace Radius
             md5.ComputeHash(requestAuthenticator);
             return md5.Hash;
         }
+        public static byte[] AccessRequestAuthenticator()
+        {
+            return Guid.NewGuid().ToByteArray();
+        }
 
         public static byte[] ResponseAuthenticator(byte[] data, byte[] requestAuthenticator, string sharedSecret)
         {

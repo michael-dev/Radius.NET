@@ -59,7 +59,7 @@ namespace Radius
         public RadiusPacket Authenticate(string username, string password)
         {
             RadiusPacket packet = new RadiusPacket(RadiusCode.ACCESS_REQUEST);
-            packet.SetAuthenticator(_SharedSecret);
+            packet.SetAuthenticator();
             byte[] encryptedPass = Utils.EncodePapPassword(Encoding.ASCII.GetBytes(password), packet.Authenticator, _SharedSecret);
             packet.SetAttribute(new RadiusAttribute(RadiusAttributeType.USER_NAME, Encoding.ASCII.GetBytes(username)));
             packet.SetAttribute(new RadiusAttribute(RadiusAttributeType.USER_PASSWORD, encryptedPass));
@@ -117,8 +117,7 @@ namespace Radius
                         // Using the synchronous method for the timeout features
                         var result = udpClient.Receive(ref endPoint);
                         RadiusPacket receivedPacket = new RadiusPacket(result);
-
-                        if (receivedPacket.Valid)
+                        if (receivedPacket.Valid && packet.Identifier == receivedPacket.Identifier)
                             return receivedPacket;
                     }
                     catch (SocketException)
