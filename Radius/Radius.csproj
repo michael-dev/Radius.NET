@@ -1,26 +1,23 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>net6.0</TargetFrameworks>
+    <TargetFrameworks>net7.0</TargetFrameworks>
     <AssemblyTitle>Radius.NET</AssemblyTitle>
-    <Company>Frederic HEBERT</Company>
+    <Company></Company>
     <Product>Radius</Product>
-    <Description>Radius client in .NET6</Description>
-    <Copyright>Copyright 2022</Copyright>
-    <Version>1.0.5.0</Version>
-    <AssemblyVersion>1.0.5.0</AssemblyVersion>
-    <FileVersion>1.0.5.0</FileVersion>
+    <Description>Radius client in .NET7</Description>
+    <Copyright>Copyright 2023</Copyright>
+    <Version>2.0.0.0</Version>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <FileVersion>2.0.0.0</FileVersion>
     <OutputPath>bin\$(Configuration)\</OutputPath>
-    <Authors>Frederic HEBERT</Authors>
-    <PackageProjectUrl>https://github.com/Frederic-HEBERT/Radius.NET</PackageProjectUrl>
+    <Authors></Authors>
+    <PackageProjectUrl>https://github.com/michael-dev/Radius.NET/</PackageProjectUrl>
     <PackageReleaseNotes>
-Fork from Front Porch Inc.
-Using .NET6
-Change Cryptographic method
 	</PackageReleaseNotes>
-    <PackageTags>Radius Client .NET6</PackageTags>
+    <PackageTags>Radius Client .NET7</PackageTags>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageId>$(AssemblyName)Client</PackageId>
-    <RepositoryUrl>https://github.com</RepositoryUrl>
+    <RepositoryUrl>https://github.com/michael-dev/Radius.NET</RepositoryUrl>
     <RepositoryType>github</RepositoryType>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
@@ -29,7 +26,5 @@ Change Cryptographic method
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
-  </PropertyGroup>
-
-	    
+  </PropertyGroup>	    
 </Project>
